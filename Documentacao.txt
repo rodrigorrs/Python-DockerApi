@@ -23,3 +23,8 @@
 4 - Execute a imagem.
 
 - docker run -it -p 8000:8000 pythonapi:latest
+
+5 - Acesse a url browser para testar.
+IP-PORTA
+ex(192.168.56.128:8000)
+resultado - {"canal": "LinuxTips", "msg": "Vaiiiiiiiiii"}
