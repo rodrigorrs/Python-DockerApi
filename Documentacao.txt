@@ -1,0 +1,12 @@
+1 - Instale o Docker Engenir
+- dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+- dnf install docker-ce --nobest -y
+- systemctl start docker
+- systemctl enable docker
+- docker --version
+
+2 - Faça login no Docker.io e Baixe a Imagem Python com a ultima versão.
+- docker login docker.io
+(usuario)
+(senha)
+- docker pull python:latest
