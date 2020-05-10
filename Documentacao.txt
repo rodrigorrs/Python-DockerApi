@@ -1,3 +1,7 @@
+0 - Certifiquese que a porta do Servidor está aberta para a API.
+- firewall-cmd --zone=public --add-port=8000/tcp --permanent
+
+
 1 - Instale o Docker Engenir
 - dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 - dnf install docker-ce --nobest -y
@@ -10,3 +14,12 @@
 (usuario)
 (senha)
 - docker pull python:latest
+
+
+3 - Dentro do mesmo diretorio do dockerfile execute os seguintes comentados de build. / lembrando que todos os arquivos disponibilizados devem estar tudo no mesmo diretório.
+
+- docker build -t pythonapi:1.0.0 .
+
+4 - Execute a imagem.
+
+- docker run -it -p 8000:8000 pythonapi:latest
